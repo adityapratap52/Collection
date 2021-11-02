@@ -28,14 +28,16 @@ public class Class7TreeSet {
         mySet1.add(13);
         mySet1.add(14);
         mySet1.add(15);
-        mySet1.add(16);
         mySet1.add(17);
+        mySet1.add(18);
 //        System.out.println(mySet1);
 //        System.out.println(mySet1.pollFirst());         // return removing value
 //        System.out.println(mySet1.pollLast());
 //        System.out.println(mySet1);
 
-        System.out.println(mySet1.ceiling(15));
-        System.out.println(mySet1.floor(15));
+//        System.out.println(mySet1.ceiling(17));         // 17<= -> 17
+//        System.out.println(mySet1.floor(17));           // 17>= -> 17
+//        System.out.println(mySet1.higher(17));          // 17<  ->18
+//        System.out.println(mySet1.lower(17));           // 17 > ->15
     }
 }
