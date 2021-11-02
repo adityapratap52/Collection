@@ -2,6 +2,8 @@ package com.collectionpractice;
 
 import java.util.ArrayList;
 
+// get,replaceAll, toLowerCase and toUpperCase,set,clear methods
+
 public class Class1ArrayListPart2 {
     public static void main(String[] args) {
         ArrayList<Integer> myArrayList = new ArrayList<>();
