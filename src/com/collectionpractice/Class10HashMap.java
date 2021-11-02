@@ -18,6 +18,12 @@ public class Class10HashMap {
 //        System.out.println(hashMap.entrySet());
 //        System.out.println(hashMap.getOrDefault(2,"Ramaji"));  // if key present in Map then return particular value otherwise return Ramaji
 //        System.out.println(hashMap.replace(1,"Rahulji"));       // replace value of the particular key
+
+
+        Integer i1 = new Integer(10);
+        Integer i2 = new Integer(10);
+        hashMap.put(i1,"Ram");
+        hashMap.put(i2,"Shyam");
         System.out.println(hashMap);
     }
 }
