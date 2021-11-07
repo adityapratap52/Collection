@@ -7,6 +7,7 @@ class Book{
     int id;
     String name,branch;
     int salary;
+
     Book(int id, String name, String branch, int salary){
         this.id = id;
         this.name = name;
