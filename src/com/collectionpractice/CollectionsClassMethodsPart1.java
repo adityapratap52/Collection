@@ -10,7 +10,7 @@ class MyComparator implements Comparator {
     }
 }
 
-public class CollectionsClassMethods {
+public class CollectionsClassMethodsPart1 {
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(4);
@@ -69,9 +69,9 @@ public class CollectionsClassMethods {
 //        int index = Collections.binarySearch(arrayList1,40);
 //        System.out.println("Index of -50 : "+index);
 
-        // Convert Simple values in random number
-        System.out.println(arrayList);
-        Collections.shuffle(arrayList);
-        System.out.println(arrayList);
+        // 5- Convert Simple values in random number
+//        System.out.println(arrayList);
+//        Collections.shuffle(arrayList);
+//        System.out.println(arrayList);
     }
 }
