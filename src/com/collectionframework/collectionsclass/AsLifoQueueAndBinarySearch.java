@@ -2,7 +2,7 @@ package com.collectionframework.collectionsclass;
 
 import java.util.*;
 
-class MyComparator implements Comparator {
+class MyComparator1 implements Comparator {
     public int compare(Object o1, Object o2){
         Integer i1 = (Integer) o1;
         Integer i2 = (Integer) o2;
@@ -10,7 +10,7 @@ class MyComparator implements Comparator {
     }
 }
 
-public class CollectionsClassMethodsPart1 {
+public class AsLifoQueueAndBinarySearch {
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(4);
@@ -19,43 +19,29 @@ public class CollectionsClassMethodsPart1 {
         arrayList.add(1);
         arrayList.add(5);
 
-        // 1- sort method
-//        System.out.println("Before Sorting : "+arrayList);
-//        Collections.sort(arrayList);
-                //----OR----//
-//        Collections.sort(arrayList,new MyComparator());
-//        System.out.println("Before Sorting : "+arrayList);
-
-
-        // 2- addAll method
-//        ArrayList<Integer> arrayList1 = new ArrayList<>();
-//        boolean result = Collections.addAll(arrayList1,12,34,13,56);
-//        System.out.println("Boolean Result : "+result);
-//        System.out.println("List Values : "+arrayList1);
-
-
-        // 3- asLifoQueue(Deque<T> deque)  method
+        // 1- asLifoQueue(Deque<T> deque)  method
 //        Deque<Integer>deque = new ArrayDeque<>();
 //        deque.add(23);
 //        deque.add(24);
 //        deque.add(25);
 //        System.out.println(deque);
-
-//        Queue queue = deque;          // If you use this process then It is always insert value at the last
-
-//        Queue queue = Collections.asLifoQueue(deque);       // It is insert value in beginning
+        //----------------------------------------------------------------------------
+//        Queue queue = deque;          // If you use this process then It is always insert and retrieve value at the last
+                    //--------OR------------//
+//        Queue queue = Collections.asLifoQueue(deque);       // It is insert and retrieve value in beginning
+        //----------------------------------------------------------------------------
 
 //        queue.add(40);
 //        queue.add(50);
 //        System.out.println(queue);
 
 
-        // 4- binarySearch(List l, T key);
+        // 2- binarySearch(List l, T key);
 //        Collections.sort(arrayList);
 //        System.out.println(Collections.binarySearch(arrayList,7));
 
         //--------OR--------//
-//        Collections.sort(arrayList,new MyComparator());
+//        Collections.sort(arrayList,new MyComparator1());
 //        System.out.println(Collections.binarySearch(arrayList,7));
 
         //--------OR--------//
@@ -68,10 +54,5 @@ public class CollectionsClassMethodsPart1 {
 //        Collections.reverseOrder();
 //        int index = Collections.binarySearch(arrayList1,40);
 //        System.out.println("Index of -50 : "+index);
-
-        // 5- Convert Simple values in random number
-//        System.out.println(arrayList);
-//        Collections.shuffle(arrayList);
-//        System.out.println(arrayList);
     }
 }
